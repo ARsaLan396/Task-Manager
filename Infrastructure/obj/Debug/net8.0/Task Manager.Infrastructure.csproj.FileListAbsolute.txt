@@ -1,0 +1,11 @@
+E:\Project\asp.net\Task Manager\Infrastructure\bin\Debug\net8.0\Task Manager.Infrastructure.deps.json
+E:\Project\asp.net\Task Manager\Infrastructure\bin\Debug\net8.0\Task Manager.Infrastructure.dll
+E:\Project\asp.net\Task Manager\Infrastructure\bin\Debug\net8.0\Task Manager.Infrastructure.pdb
+E:\Project\asp.net\Task Manager\Infrastructure\obj\Debug\net8.0\Task Manager.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project\asp.net\Task Manager\Infrastructure\obj\Debug\net8.0\Task Manager.Infrastructure.AssemblyInfoInputs.cache
+E:\Project\asp.net\Task Manager\Infrastructure\obj\Debug\net8.0\Task Manager.Infrastructure.AssemblyInfo.cs
+E:\Project\asp.net\Task Manager\Infrastructure\obj\Debug\net8.0\Task Manager.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Project\asp.net\Task Manager\Infrastructure\obj\Debug\net8.0\Task Manager.Infrastructure.dll
+E:\Project\asp.net\Task Manager\Infrastructure\obj\Debug\net8.0\refint\Task Manager.Infrastructure.dll
+E:\Project\asp.net\Task Manager\Infrastructure\obj\Debug\net8.0\Task Manager.Infrastructure.pdb
+E:\Project\asp.net\Task Manager\Infrastructure\obj\Debug\net8.0\ref\Task Manager.Infrastructure.dll

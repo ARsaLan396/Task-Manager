@@ -1,0 +1,108 @@
+﻿@model HomeSummaryViewModel;
+@{
+    ViewData["Title"] = "خانه";
+}
+
+<div class="hero-compact" dir="rtl">
+    <div class="container text-center py-3">
+        <h1 class="fw-bold mb-2">📋 به Task Manager خوش اومدی</h1>
+        <p class="text-muted mb-3">
+            جایی برای مدیریت کارها و برنامه‌ریزی روزانه‌ت
+        </p>
+        <a asp-controller="Task" asp-action="Index" class="btn btn-primary px-4 py-2 mb-4">
+            🚀 برو به لیست تسک‌ها
+        </a>
+
+        <div class="row g-3 mb-4">
+            <div class="col-md-4">
+                <div class="feature-card p-3 shadow-sm rounded">
+                    <div class="fs-3 mb-1">✅</div>
+                    <h6 class="mb-1">مدیریت آسان</h6>
+                    <p class="text-muted small mb-0">اضافه، ویرایش و حذف با چند کلیک</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card p-3 shadow-sm rounded">
+                    <div class="fs-3 mb-1">⚡</div>
+                    <h6 class="mb-1">سریع و بدون رفرش</h6>
+                    <p class="text-muted small mb-0">همه‌چیز به‌صورت آنی</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card p-3 shadow-sm rounded">
+                    <div class="fs-3 mb-1">🎯</div>
+                    <h6 class="mb-1">ساخته شده توسط قاسم</h6>
+                    <p class="text-muted small mb-0">پروژه شخصی برنامه‌ریزی</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="stat-card p-3 rounded text-center">
+                    <div class="stat-icon">📊</div>
+                    <h3 class="fw-bold mb-0">@Model.Total</h3>
+                    <p class="mb-0 small text-white-50">کل تسک‌ها</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-card p-3 rounded text-center stat-success">
+                    <div class="stat-icon">✅</div>
+                    <h3 class="fw-bold mb-0">@Model.Completed</h3>
+                    <p class="mb-0 small text-white-50">انجام‌شده</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-card p-3 rounded text-center stat-warning">
+                    <div class="stat-icon">⏳</div>
+                    <h3 class="fw-bold mb-0">@Model.Remaining</h3>
+                    <p class="mb-0 small text-white-50">باقی‌مونده</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .hero-compact {
+        background: linear-gradient(135deg, #f4f6f9, #e9ecef);
+        min-height: calc(100vh - 130px); /* ارتفاع صفحه منهای هدر و فوتر */
+        display: flex;
+        align-items: center;
+    }
+
+        .hero-compact .container {
+            width: 100%;
+        }
+
+    .feature-card {
+        background: white;
+        transition: transform 0.2s ease;
+    }
+
+        .feature-card:hover {
+            transform: translateY(-4px);
+        }
+
+    .stat-card {
+        background: linear-gradient(135deg, #2c3e50, #34495e);
+        color: white;
+        transition: transform 0.2s ease;
+    }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .stat-card.stat-success {
+            background: linear-gradient(135deg, #1e7e34, #28a745);
+        }
+
+        .stat-card.stat-warning {
+            background: linear-gradient(135deg, #b8860b, #ffc107);
+        }
+
+    .stat-icon {
+        font-size: 24px;
+    }
+</style>

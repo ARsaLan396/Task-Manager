@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Task Manager</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f4f6f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow : hidden;
+        }
+        header.app-header {
+            background: linear-gradient(90deg, #2c3e50, #34495e);
+            color: white;
+            padding: 18px 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+        header.app-header .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        header.app-header .logo span {
+            color: #4fc3f7;
+        }
+        /* main.app-content { */
+        /*     flex: 1; */
+        /*     padding-bottom: 40px; */
+        /* } */
+        footer.app-footer {
+            background-color: #2c3e50;
+            color: #cfd8dc;
+            text-align: center;
+            padding: 16px 0;
+            font-size: 14px;
+            margin-top: auto;
+        }
+        footer.app-footer strong {
+            color: #4fc3f7;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="app-header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">📋 <span>Task</span>Manager</div>
+            <nav>
+                <a asp-controller="Task" asp-action="Index" class="text-white text-decoration-none">لیست تسک‌ها</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="app-content">
+        @RenderBody()
+    </main>
+
+    <footer class="app-footer">
+        <div class="container">
+            ساخته شده با ❤️ توسط <strong>قاسم</strong> | تمام حقوق محفوظ است &copy; @DateTime.Now.Year
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
